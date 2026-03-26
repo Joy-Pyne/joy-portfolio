@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy Pyne - Portfolio</title>
+    <meta name="description" content="Portfolio of Joy Pyne, Aspiring Data Analyst & Problem Solver">
+    
+    <!-- Google Fonts: Poppins & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+        <!-- Fallback base styling to prevent unstyled flash -->
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0b1220; color: #ffffff; margin: 0; padding: 0; }
+        .loader-wrapper { display: none !important; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        nav { display: flex; padding: 20px; background: #0b1220; }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar glass">
+        <div class="nav-brand"><a href="#home">JP.</a></div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects-section" class="nav-link">Projects</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon dark-icon"></i>
+                    <i class="fas fa-sun light-icon"></i>
+                </button>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="hero-section section-transition">
+        <div class="container hero-container">
+            <div class="hero-content-left glass-card hover-glow">
+                <h1 class="hero-name">Hi, I'm <br><span class="gradient-text-glow">Joy Pyne</span></h1>
+                <h2 class="tagline typing-text" data-text="Aspiring Data Analyst & Problem Solver"></h2>
+                <p class="hero-description">Passionate about problem-solving, AI, and building real-world applications.</p>
+                
+                <div class="skills-badges">
+                    <span class="badge badge-cpp"><i class="fas fa-code"></i> C++</span>
+                    <span class="badge badge-python"><i class="fab fa-python"></i> Python</span>
+                    <span class="badge badge-js"><i class="fab fa-js"></i> JavaScript</span>
+                    <span class="badge badge-excel"><i class="fas fa-file-excel"></i> Excel</span>
+                    <span class="badge badge-mysql"><i class="fas fa-database"></i> MySQL</span>
+                </div>
+
+                <div class="cta-buttons align-left">
+                    <a href="#projects-section" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+                
+                <div class="social-links-hero align-left">
+                    <a href="https://www.linkedin.com/in/joypyne2807/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Joy-Pyne" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:joypyne569@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-image-right section-transition">
+                <div class="glow-wrapper">
+                    <!-- Profile image from requirementportfolio folder -->
+                    <img src="./requiementportfolio/picture.png" alt="Joy Pyne" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT ME -->
+    <section id="about" class="section section-transition">
+        <div class="container section-container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-grid">
+                <!-- Left Side: Quick Facts -->
+                <div class="about-left glass-card hover-glow p-4">
+                    <h3 class="mb-4">Quick <span>Facts</span></h3>
+                    <ul class="quick-facts-list">
+                        <li><i class="fas fa-map-marker-alt text-accent"></i> <strong>Location:</strong> India</li>
+                        <li><i class="fas fa-graduation-cap text-accent"></i> <strong>Education:</strong> B.Tech CSE (LPU)</li>
+                        <li><i class="fas fa-laptop-code text-accent"></i> <strong>Skills Focus:</strong> Data Analysis + DSA</li>
+                    </ul>
+                </div>
+                
+                <!-- Right Side: Journey -->
+                <div class="about-right glass-card hover-glow p-4">
+                    <h3 class="mb-2">My <span>Journey</span></h3>
+                    <p class="text-muted mb-4">I am Joy Pyne, a Computer Science Engineering student with a strong interest in data analysis, problem-solving, and building real-world applications. I have hands-on experience in developing projects like a Supermarket Sales Dashboard using Excel and an AI-based Stock Market Chatbot using web technologies and NLP concepts. I enjoy working with data to extract meaningful insights and continuously improve my technical and analytical skills. I am a quick learner, adaptable team player, and passionate about leveraging technology to solve practical problems.</p>
+                    
+                    <h4 class="mb-2">My Approach</h4>
+                    <div class="approach-tags mb-4">
+                        <span class="badge"><i class="fas fa-chart-line"></i> Data-driven thinking</span>
+                        <span class="badge"><i class="fas fa-puzzle-piece"></i> Problem-solving mindset</span>
+                        <span class="badge"><i class="fas fa-book-open"></i> Continuous learning</span>
+                    </div>
+
+                    <h4 class="mb-2">When I'm Not Coding</h4>
+                    <div class="hobbies-cards">
+                        <div class="hobby-card glass"><i class="fas fa-book text-accent"></i> Reading</div>
+                        <div class="hobby-card glass"><i class="fas fa-music text-accent"></i> Music</div>
+                        <div class="hobby-card glass"><i class="fas fa-chess-knight text-accent"></i> Playing Chess</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. RESUME SECTION (Tabbed Navigation) -->
+    <section id="resume" class="section section-transition">
+        <div class="container section-container">
+            <h2 class="section-title">My <span>Resume</span></h2>
+            
+            <div class="resume-container glass-card hover-glow">
+                <!-- TOP INFO BAR -->
+                <div class="resume-info-bar">
+                    <div class="info-item"><i class="fas fa-envelope"></i> joypyne569@gmail.com</div>
+                    <div class="info-item"><i class="fas fa-phone"></i> +91-9795586147</div>
+                    <div class="info-social">
+                        <a href="https://www.linkedin.com/in/joypyne2807/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Joy-Pyne" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- TABS (Horizontal Navigation) -->
+                <div class="resume-tabs">
+                    <button class="tab-btn active" data-target="tab-projects">Projects</button>
+                    <button class="tab-btn" data-target="tab-extracurricular">Extracurricular</button>
+                    <button class="tab-btn" data-target="tab-certificates">Certificates</button>
+                </div>
+
+                <!-- TAB CONTENTS -->
+                <div class="resume-tab-contents p-4">
+                    
+                    <!-- PROJECTS TAB (Default Active) -->
+                    <div class="tab-pane active" id="tab-projects">
+                        <div class="projects-grid">
+                            <!-- Card 1 -->
+                            <div class="project-card glass-card hover-glow p-4">
+                                <h3 class="project-title">Supermarket Sales Dashboard</h3>
+                                <p class="project-duration"><i class="far fa-calendar-alt"></i> Jan 2025 – Apr 2025</p>
+                                <ul class="project-list">
+                                    <li>Built an interactive dashboard using Excel</li>
+                                    <li>Used Pivot Tables, Charts, and Slicers</li>
+                                    <li>Analyzed revenue, customer segmentation, and product performance</li>
+                                    <li>Performed data cleaning and preprocessing</li>
+                                    <li>Generated insights on sales trends and customer behavior</li>
+                                </ul>
+                                <div class="project-tech mt-4">
+                                    <span>Excel</span>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="project-card glass-card hover-glow p-4">
+                                <h3 class="project-title">Stock Market Chatbot</h3>
+                                <p class="project-duration"><i class="far fa-calendar-alt"></i> Jan 2025 – Apr 2025</p>
+                                <ul class="project-list">
+                                    <li>Developed an AI-based chatbot for stock market insights</li>
+                                    <li>Integrated NLP and APIs for real-time data</li>
+                                    <li>Provided stock predictions and personalized responses</li>
+                                    <li>Designed workflows for risk analysis and portfolio suggestions</li>
+                                </ul>
+                                <div class="project-tech mt-4">
+                                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EXTRACURRICULAR TAB -->
+                    <div class="tab-pane" id="tab-extracurricular">
+                        <ul class="timeline-list">
+                            <li>
+                                <div class="timeline-icon"><i class="fas fa-hands-helping"></i></div>
+                                <div class="timeline-details">
+                                    <h4>NGO Work</h4>
+                                    <p class="text-muted mb-2">Taught underprivileged students and participated in social work.</p>
+                                    <a href="./requiementportfolio/Nari Shakti Jagran Samiti – Community Development (NGO).pdf" target="_blank" class="btn btn-sm btn-outline" download><i class="fas fa-download"></i> Certificate</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+                                <div class="timeline-details">
+                                    <h4>Hackathon</h4>
+                                    <p class="text-muted mb-2">Participated in Code Off Duty Web Hackathon.</p>
+                                    <a href="./requiementportfolio/Code Off Duty – Web Hackathon.pdf" target="_blank" class="btn btn-sm btn-outline" download><i class="fas fa-download"></i> Certificate</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- CERTIFICATES TAB -->
+                    <div class="tab-pane" id="tab-certificates">
+                        <ul class="cert-list">
+                            <li><i class="fas fa-certificate text-accent"></i> <strong>Computational Theory</strong> – Infosys (Aug 2025)</li>
+                            <li><i class="fas fa-code text-accent"></i> <strong>C++</strong> – NeoColab (May 2024)</li>
+                            <li><i class="fas fa-code text-accent"></i> <strong>C Programming</strong> – NeoColab (Dec 2024)</li>
+                            <li><i class="fab fa-html5 text-accent"></i> <strong>Responsive Web Design</strong> – freeCodeCamp (Dec 2023)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- BOTTOM BUTTON -->
+                <div class="resume-footer text-center p-4">
+                    <a href="./requiementportfolio/Joy Pyne CV mainn.pdf" target="_blank" class="btn btn-glowing-gradient" download>
+                        <i class="fas fa-download"></i> Download Resume (PDF)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. EDUCATION (Standalone) -->
+    <section id="education" class="section section-transition">
+        <div class="container section-container">
+            <h2 class="section-title">My <span>Education</span></h2>
+            <div class="education-cards">
+                <!-- Card 1 -->
+                <div class="edu-card glass-card hover-glow p-4">
+                    <div class="edu-content">
+                        <h3>Lovely Professional University</h3>
+                        <h4>B.Tech CSE</h4>
+                        <p class="text-muted mt-2">CGPA: <span class="text-accent">6.65</span></p>
+                    </div>
+                    <div class="edu-date-badge">Aug 2023 – Present</div>
+                </div>
+                <!-- Card 2 -->
+                <div class="edu-card glass-card hover-glow p-4">
+                    <div class="edu-content">
+                        <h3>Mahatma J.F Public School</h3>
+                        <h4>Intermediate</h4>
+                        <p class="text-muted mt-2">Percentage: <span class="text-accent">71.2%</span></p>
+                    </div>
+                    <div class="edu-date-badge">2022 – 2023</div>
+                </div>
+                <!-- Card 3 -->
+                <div class="edu-card glass-card hover-glow p-4">
+                    <div class="edu-content">
+                        <h3>Mahatma J.F Public School</h3>
+                        <h4>Matriculation</h4>
+                        <p class="text-muted mt-2">Percentage: <span class="text-accent">69%</span></p>
+                    </div>
+                    <div class="edu-date-badge">2020 – 2021</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SKILLS & EXPERTISE (Standalone) -->
+    <section id="skills" class="section section-transition">
+        <div class="container section-container">
+            <h2 class="section-title">Skills & <span>Expertise</span></h2>
+            <div class="expertise-grid">
+                
+                <!-- Card 1 -->
+                <div class="expertise-card glass-card hover-glow p-4">
+                    <div class="expertise-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="expertise-title">Languages</h3>
+                    <ul class="expertise-list">
+                        <li><i class="fas fa-angle-right"></i> C</li>
+                        <li><i class="fas fa-angle-right"></i> C++</li>
+                        <li><i class="fas fa-angle-right"></i> Java</li>
+                        <li><i class="fas fa-angle-right"></i> Python</li>
+                        <li><i class="fas fa-angle-right"></i> JavaScript</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="expertise-card glass-card hover-glow p-4">
+                    <div class="expertise-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3 class="expertise-title">Frameworks</h3>
+                    <ul class="expertise-list">
+                        <li><i class="fas fa-angle-right"></i> HTML</li>
+                        <li><i class="fas fa-angle-right"></i> CSS</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="expertise-card glass-card hover-glow p-4">
+                    <div class="expertise-icon"><i class="fas fa-database"></i></div>
+                    <h3 class="expertise-title">Tools/DBs</h3>
+                    <ul class="expertise-list">
+                        <li><i class="fas fa-angle-right"></i> MySQL</li>
+                        <li><i class="fas fa-angle-right"></i> Excel</li>
+                        <li><i class="fas fa-angle-right"></i> PowerBI</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="expertise-card glass-card hover-glow p-4">
+                    <div class="expertise-icon"><i class="fas fa-users"></i></div>
+                    <h3 class="expertise-title">Soft Skills</h3>
+                    <ul class="expertise-list">
+                        <li><i class="fas fa-angle-right"></i> Problem Solving</li>
+                        <li><i class="fas fa-angle-right"></i> Team Collaboration</li>
+                        <li><i class="fas fa-angle-right"></i> Adaptability</li>
+                        <li><i class="fas fa-angle-right"></i> Analytical Thinking</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PROJECTS (Standalone) -->
+    <section id="projects-section" class="section section-transition">
+        <div class="container section-container">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            
+            <div class="project-filters mb-4">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="data">Data Analysis</button>
+                <button class="filter-btn" data-filter="web">Web & AI</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-item glass-card hover-glow p-4" data-category="data">
+                    <h3 class="project-title">Supermarket Sales Dashboard</h3>
+                    <p class="project-desc">Interactive dashboard presenting cleaned data through pivot tables to uncover revenue insights and customer segmentation.</p>
+                    <div class="project-tech mb-4">
+                        <span>Excel</span>
+                        <span>Data Cleaning</span>
+                        <span>Pivot Tables</span>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="https://github.com/Joy-Pyne/Super-Market-Sales-DashBoard" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-item glass-card hover-glow p-4" data-category="web">
+                    <h3 class="project-title">Stock Market Chatbot</h3>
+                    <p class="project-desc">AI-based chatbot for real-time stock insights, predicting trends, and designing workflows for robust portfolio analysis.</p>
+                    <div class="project-tech mb-4">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>MySQL</span>
+                        <span>NLP</span>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="https://github.com/Joy-Pyne/Chat-BOX-of-Stock-market-insight-bot" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CERTIFICATIONS & TRAINING -->
+    <section id="certifications" class="section section-transition">
+        <div class="container section-container">
+            <h2 class="section-title">Certifications & <span>Training</span></h2>
+            <div class="cert-grid">
+                
+                <!-- 1 -->
+                <a href="./requiementportfolio/Master Generative AI & Generative AI tools (ChatGPT & more).pdf" target="_blank" class="cert-card glass-card hover-glow p-4">
+                    <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                    <div class="cert-info">
+                        <h4>Master Generative AI & Tools</h4>
+                        <p>Infosys Springboard • Aug 2025</p>
+                    </div>
+                </a>
+                
+                <!-- 2 -->
+                <a href="./requiementportfolio/ChatGPT-4 Prompt Engineering ChatGPT, Generative AI & LLM.pdf" target="_blank" class="cert-card glass-card hover-glow p-4">
+                    <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                    <div class="cert-info">
+                        <h4>ChatGPT-4 Prompt Eng.</h4>
+                        <p>Infosys Springboard • Aug 2025</p>
+                    </div>
+                </a>
+                
+                <!-- 3 -->
+                <a href="./requiementportfolio/Build Generative AI Apps and Solutions with No-Code Tools.pdf" target="_blank" class="cert-card glass-card hover-glow p-4">
+                    <div class="cert-icon"><i class="fas fa-layer-group"></i></div>
+                    <div class="cert-info">
+                        <h4>Build Gen AI Apps (No-Code)</h4>
+                        <p>Infosys Springboard • Aug 2025</p>
+                    </div>
+                </a>
+                
+                <!-- 4 -->
+                <a href="./requiementportfolio/Computational Theory Language Principle & Finite Automata Theory.pdf" target="_blank" class="cert-card glass-card hover-glow p-4">
+                    <div class="cert-icon"><i class="fas fa-star"></i></div>
+                    <div class="cert-info">
+                        <h4>Computational Theory</h4>
+                        <p>Infosys Springboard • Aug 2025</p>
+                    </div>
+                </a>
+                
+                <!-- 5 -->
+                <a href="./requiementportfolio/Cloud Computing(NPTEL certificate).pdf" target="_blank" class="cert-card glass-card hover-glow p-4">
+                    <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+                    <div class="cert-info">
+                        <h4>Cloud Computing</h4>
+                        <p>NPTEL • Jan 2025 – Apr 2025</p>
+                    </div>
+                </a>
+                
+                <!-- 6 -->
+                <a href="./requiementportfolio/Free Code Camp.pdf" target="_blank" class="cert-card glass-card hover-glow p-4">
+                    <div class="cert-icon"><i class="fab fa-html5"></i></div>
+                    <div class="cert-info">
+                        <h4>Responsive Web Design</h4>
+                        <p>freeCodeCamp • Dec 2023</p>
+                    </div>
+                </a>
+                
+                <!-- 7 -->
+                <a href="./requiementportfolio/cpp in neocolab.pdf" target="_blank" class="cert-card glass-card hover-glow p-4">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <div class="cert-info">
+                        <h4>Object Oriented Prog.</h4>
+                        <p>NeoColab (LPU) • Dec 2024</p>
+                    </div>
+                </a>
+                
+                <!-- 8 -->
+                <a href="./requiementportfolio/dsa in neocolab.pdf" target="_blank" class="cert-card glass-card hover-glow p-4">
+                    <div class="cert-icon"><i class="fas fa-project-diagram"></i></div>
+                    <div class="cert-info">
+                        <h4>Data Structures & Algos</h4>
+                        <p>NeoColab (LPU) • Dec 2024</p>
+                    </div>
+                </a>
+                
+                <!-- 9 -->
+                <a href="./requiementportfolio/summer Training Internship  DSA CERTIFICATE.pdf" target="_blank" class="cert-card glass-card hover-glow p-4">
+                    <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="cert-info">
+                        <h4>DSA Summer Training</h4>
+                        <p>LPU • Jun 2025 – Jul 2025</p>
+                    </div>
+                </a>
+                
+                <!-- 10 -->
+                <a href="./requiementportfolio/Fundamentals of Network Communication.pdf" target="_blank" class="cert-card glass-card hover-glow p-4">
+                    <div class="cert-icon"><i class="fas fa-share-alt"></i></div>
+                    <div class="cert-info">
+                        <h4>Network Communication</h4>
+                        <p>Coursera • Sep 2024</p>
+                    </div>
+                </a>
+                
+                <!-- 11 -->
+                <a href="./requiementportfolio/Digital Systems From Logic Gates to Processors.pdf" target="_blank" class="cert-card glass-card hover-glow p-4">
+                    <div class="cert-icon"><i class="fas fa-memory"></i></div>
+                    <div class="cert-info">
+                        <h4>Digital Systems</h4>
+                        <p>Coursera • Dec 2024</p>
+                    </div>
+                </a>
+                
+                <!-- 12 -->
+                <a href="./requiementportfolio/The Bits and Bytes of Computer Networking.pdf" target="_blank" class="cert-card glass-card hover-glow p-4">
+                    <div class="cert-icon"><i class="fas fa-server"></i></div>
+                    <div class="cert-info">
+                        <h4>Bits & Bytes of Networking</h4>
+                        <p>Coursera (Google) • Sep 2024</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- 10. CONTACT SECTION -->
+    <section id="contact" class="section section-transition">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            
+            <div class="contact-container glass-card hover-glow">
+                
+                <div class="contact-form-container p-4">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required class="glass-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required class="glass-input">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required class="glass-input"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-glowing-gradient submit-btn w-100 mt-3" style="font-weight: 600;">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div id="formStatus" style="margin-top: 15px; display: none; padding: 10px; border-radius: 5px; text-align: center;"></div>
+                </div>
+
+                <div class="contact-info p-4">
+                    <h3>Contact Info</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 25px;">I am eager to connect, collaborate, and contribute. Reach out through the form or using the links below.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>joypyne569@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91-9795586147</span>
+                    </div>
+                    
+                    <div class="contact-item mt-4">
+                        <i class="fab fa-linkedin-in"></i>
+                        <a href="https://www.linkedin.com/in/joypyne2807/" target="_blank" class="contact-text-link">LinkedIn: https://www.linkedin.com/in/joypyne2807/</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/Joy-Pyne" target="_blank" class="contact-text-link">GitHub: https://github.com/Joy-Pyne</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass mt-4">
+        <p>&copy; 2026 Joy Pyne. Designed with passion.</p>
+    </footer>
+
+    <!-- Particles JS -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
