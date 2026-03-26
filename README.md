@@ -99,6 +99,11 @@ http://localhost:3000
 
 This project is personal work. Feel free to use it as inspiration for your own portfolio!
 
+## 🚀 Deployment
+
+- **GitHub**: [joy-portfolio](https://github.com/Joy-Pyne/joy-portfolio)
+- **Live Site**: Deployed on Vercel for high-performance hosting
+
 ---
 
 **Made with passion** ❤️ | © 2026 Joy Pyne
